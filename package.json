@@ -1,0 +1,24 @@
+{
+  "name": "oriuserauth",
+  "version": "0.0.1",
+  "description": "origamicore user authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vahidHossaini/oriuserauth.git"
+  },
+  "keywords": [
+    "origamicore",
+    "user",
+    "authentication"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vahidHossaini/oriuserauth/issues"
+  },
+  "homepage": "https://github.com/vahidHossaini/oriuserauth#readme"
+}
