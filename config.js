@@ -11,7 +11,7 @@ module.exports = class paymentConfig
     
     getVersionedPackages()
     { 
-      return []
+      return [{name:"uuid"}]
     }
 
     geInternaltPackages()
@@ -28,24 +28,24 @@ module.exports = class paymentConfig
     {
       return {
           context:'default',
-          requirePhone:true,
-          confirmEmail:true,
-          confirmPhone:true,
-          linkToSmsAuth:true,
-          linkToOauth:true,
+          requirePhone:false,
+          confirmEmail:false,
+          confirmPhone:false,
+          linkToSmsAuth:false,
+          linkToOauth:false,
           superadmin:{
             username:'vahid',
             password:'123456'
           },
-          twoStepVerificationRoles:[roles.userAuth],
-          defaultAuthorization:[roles.userAuth],
+          //twoStepVerificationRoles:[roles.userAuth],
+          //defaultAuthorization:[roles.userAuth],
           emailNotifyContext:'email',//notificationName
           emailNotifyTemplate:'confirmeEmail',//notification template name
           forgetPasswordTemplate:'forgetEmail',//notification template name
           notifyContext:'sms',//notificationName
           notifyTemplate:'confirmeSms',//notification template name
           twoStepEmail:false,
-          twoStepSms:true,
+          twoStepSms:false,
           isActive:true
 
       }

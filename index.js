@@ -1,5 +1,5 @@
-var authz=require('../common/authz')
-var general=require('../common/general')
+var authz=require('./common/authz')
+var general=require('./common/general')
 var uuid=require('uuid')
 module.exports = class paymentConfig
 {
@@ -7,6 +7,10 @@ module.exports = class paymentConfig
   {
     this.config=config.statics
     this.context=this.config.context 
+    this.bootstrap=require('./bootstrap.js')
+    this.enums=require('./struct.js') 
+    this.tempConfig=require('./config.js')
+    
     this.defaultAuthz = authz.getRole(this.config.defaultAuthorization)
 	if(this.config.twoStepVerificationRoles)
     this.twoRoles = authz.getRole(this.config.twoStepVerificationRoles)

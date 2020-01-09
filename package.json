@@ -1,6 +1,6 @@
 {
   "name": "oriuserauth",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "origamicore user authentication",
   "main": "index.js",
   "scripts": {
